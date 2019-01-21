@@ -1,0 +1,108 @@
+/*
+Theme Name: Blarodgul Retina Childtheme
+Theme URI: www.blårödgul.se
+Description: This is a child theme from Retina Blog.
+Author: Anders Hagelkvist
+Author URI: www.andershagelkvist.se
+Template: retina-blog
+Verision: 0.1
+*/
+
+@import url("../retina-blog/style.css");
+
+.banner-overlay{
+
+	background-color: white !important;
+}
+
+.site-title{
+	color: #5b5b5b !important;
+	font-family: Syncopate
+}
+.site-content{
+	text-align: center
+}
+
+.preloader{
+	display: none;
+}
+
+.banner-overlay{
+	display: none;
+height: 800px;
+	background-color: yellow !important
+}
+.data-bg{
+	background: #0000;
+}
+.customize-preview{
+	display: none;
+}
+.page-id-110 .entry-content{
+	    width: 447px;
+    margin: auto;
+}
+.page-id-110 .entry-title{
+	display: none;
+}
+.page-id-57 .entry-title{
+	display: none;
+}
+.page-id-269 .entry-title{
+	display: none;
+}
+.entry-title{
+	display: none;
+}
+
+.breadcrumb-wrapper{
+	display: none;
+}
+.blog .entry-title{
+	display: block;
+}
+.page-id-269 .entry-header{
+	display: none;
+}
+.navigation,post-navigation{
+	display: none !important;
+}
+
+
+.top-area data-bg{
+	    background-image: url(https://xn--blrdgul-fxa8m.se/wp-content/uploads/2018/12/cropped-Top-part-1-5.jpg);
+}
+
+
+@media (min-width: 481px) and (max-width: 767px) {
+	/*#masthead{*/
+		/*height: 20px;*/
+		/*width: 20px;*/
+	/*}*/
+  	:not(page-id-269) .top-area{
+		display: none !important;
+	}
+  
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+	/*.page-id-269 .top-area{
+		display: block !important;
+	}
+		.top-area{
+			
+		display: none !important;
+	}*/
+	
+	
+}
+  
+
+ 
+
+
