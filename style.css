@@ -65,12 +65,71 @@ Verision: 0.1
 .navigation,post-navigation{
 	display: none !important;
 }
-.single-product .entry-title{
+/* .single-product .entry-title{
 	display: block !important;
-}
+} */
 .top-area data-bg{
 	    background-image: url(https://xn--blrdgul-fxa8m.se/wp-content/uploads/2018/12/cropped-Top-part-1-5.jpg);
 }
+
+
+.woocommerce-product-details__short-description{
+	text-align: left;
+}
+
+.woocommerce-variation-description{
+	text-align:left;
+}
+.sku_wrapper{
+	display: none;
+}
+.summary ,entry-summary{
+	text-align: left !important;
+}
+
+
+.price ,woocommerce-Price-amount ,amount{
+	text-align: center !important;
+	color: purple !important;
+	font-size: 30px !important;
+	font-weight: bold;
+}
+.woocommerce .button.button.alt{
+	background-color: #0ea78a;
+	text-align: center;
+}
+
+.woocommerce-product-details__short-description{
+	margin-bottom: 30px;
+}
+.single_add_to_cart_button {
+		background-color: #0ea78a !important;
+text-align: center;
+}
+
+.variations_form .cart{
+	text-align: center !important;
+}
+
+
+#wc-stripe-payment-request-wrapper{
+	display: none !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @media (min-width: 481px) and (max-width: 767px) {
@@ -136,7 +195,3 @@ Verision: 0.1
 
 }
   
-
- 
-
-
