@@ -17,7 +17,7 @@ Verision: 0.1
 
 .site-title{
 	color: #5b5b5b !important;
-	font-family: Syncopate
+	font-family: Syncopate;
 }
 .site-content{
 	text-align: center
@@ -29,8 +29,6 @@ Verision: 0.1
 
 .banner-overlay{
 	display: none;
-height: 800px;
-	background-color: yellow !important
 }
 .data-bg{
 	background: #0000;
@@ -67,8 +65,9 @@ height: 800px;
 .navigation,post-navigation{
 	display: none !important;
 }
-
-
+.single-product .entry-title{
+	display: block !important;
+}
 .top-area data-bg{
 	    background-image: url(https://xn--blrdgul-fxa8m.se/wp-content/uploads/2018/12/cropped-Top-part-1-5.jpg);
 }
@@ -100,6 +99,41 @@ height: 800px;
 	}*/
 	
 	
+		.data-bg {
+		height: 100px !important;
+	}
+	
+	.top-area {
+		padding: 0px !important;
+	}
+	.site-branding{
+		font-size: 2px !important;
+		display: none;
+	}
+	.page-id-269 .data-bg{
+		height: 490px !important	
+	
+	}
+	.page-id-269 .site-branding {
+		display: block !important;
+		padding-top: 80px
+		
+	}
+	.page-id-269 .top-area{
+		padding: 2px !important;
+	}
+
+
+	.breadcrumb-wrapper{
+	display: block !important;
+	
+}	
+	.breadcrumbs{
+		border-bottom: none;
+		border-top: none;
+	}
+	
+
 }
   
 

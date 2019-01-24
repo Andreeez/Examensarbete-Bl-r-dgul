@@ -15,6 +15,7 @@
 <head>
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link rel="profile" href="http://gmpg.org/xfn/11">
 
     <?php wp_head(); ?>
@@ -29,6 +30,7 @@
         <div class="top-area data-bg" data-background="<?php echo esc_url($retina_blog_header_image); ?>">
             <div class="wrapper">
                 <div class="site-branding">
+
                     <?php
                     the_custom_logo();
                     if (is_front_page() && is_home()) :
@@ -57,7 +59,7 @@
             </div>
             <div class="banner-overlay"></div>
         </div>
-
+                   
         <nav id="site-navigation" class="main-navigation" role="navigation">
             <div class="wrapper">
                 <span class="toggle-menu" aria-controls="primary-menu" aria-expanded="false">

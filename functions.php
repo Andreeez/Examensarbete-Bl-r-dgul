@@ -38,16 +38,34 @@ function print_policy_products(){
     foreach ( $terms as $term ) {
          $cat_name = $term->name;
          if($cat_name == 'Tavla'){
-            echo '<a href="https://xn--blrdgul-fxa8m.se/">Villkor gällande produkter</a>';
+            echo '<a href="https://xn--blrdgul-fxa8m.se/kopvillkor/">Köpvillkor</a>';
             
         } 
         if($cat_name == 'Kurser'){
-            echo '<a href="https://xn--blrdgul-fxa8m.se/">Villkor gällande Kurser</a>';
+            echo '<a href="https://xn--blrdgul-fxa8m.se/privacy-policy-kurser/">Avbokning/Ombokning Kurser</a>';
 
         }
         
     }
 
+}
+
+// ************************************************************************************************ //
+//   Funktion för att lägga till länk till Tavlor som är gjorda av Morla Rosel
+
+
+add_action('woocommerce_single_product_summary', 'print_link_maria', 41);
+
+function print_link_maria(){
+    $terms = get_the_terms ( $product_id, 'product_cat' );
+    foreach ( $terms as $term ) {
+         $cat_name = $term->name;
+         if($cat_name == 'Morla Rosel'){
+            echo '<a href="https://xn--blrdgul-fxa8m.se/maria-jose/">Läs mer om Morla Rosel </a>';
+            
+        } 
+
+}
 }
 
 remove_action('woocommerce_before_shipping_calculator' , 'remove_shipping_label');
@@ -61,128 +79,5 @@ remove_action('woocommerce_before_shipping_calculator' , 'remove_shipping_label'
                 } 
             }
         }
-
-    // $terms = get_the_terms ( $product_id, 'product_cat' );
-    //         foreach ( $terms as $term ) {
-    //             $cat_name = $term->name;
-    //             if($cat_name == 'Kurser'){
-    //                 return false;
-    //             }
-                
-    //         }
-    //         return $show_shipping;
-    //     } 
-    // }
-    
-
-
-// }
-// woocommerce_before_shipping_calculator
-// add_filter( 'woocommerce_cart_shipping_method_full_label', 'remove_shipping_label', 10, 2 );
-
-// function remove_shipping_label( $label, $method ) {
-// 	$new_label = preg_replace( '/^.+:/', '', $label );
-
-// 	return $new_label;
-// }
-
-// add_filter( 'woocommerce_cart_ready_to_calc_shipping','disable_shipping_calc_on_cart', 99 );
-// function disable_shipping_calc_on_cart( $show_shipping ) {
-
-//     if( is_cart() ) {
-//         $terms = get_the_terms ( $product_id, 'product_cat' );
-//         foreach ( $terms as $term ) {
-//             $cat_name = $term->name;
-//             if($cat_name == 'Kurser'){
-//                 return false;
-//             }
-            
-//         }
-//         return $show_shipping;
-//     } 
-// }
-
-
-
-
-
-
-
-
-
-// add_filter( 'woocommerce_checkout_fields' , 'my_override_checkout_fields' );
-// function my_override_checkout_fields( $fields ) {
-    
-//          unset($fields['billing']['billing_phone']);
-    
-     
-    
-//          return $fields;
-    
-//     }
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//     global $wp_query;
-// // get the query object
-// $product_cats = wp_get_post_terms('product_cat' );
-
-// $cat_obj = $wp_query->get_queried_object();
-
-// $category_name = $cat_obj->name;
-
-// print_r($cat_obj);
-
-// $term_list = wp_get_post_terms($product_id, 'product_cat', array('fields' => 'ids'));
-// print_r($term_list);
-
-
-// // if($cat_obj)    {
-// //     $category_name = $cat_obj->name;
-// //     $category_desc = $cat_obj->description;
-// //     $category_ID  = $cat_obj->term_id;
-// //     echo $category_ID;
-
-//     // with the `$category_ID`, proceed to your `if/else` statement.
-//     if( $product_cats =='Tavla'){
-//         echo '<a href="https://xn--blrdgul-fxa8m.se/">Villkor vid avbokning av kurser Policy</a>';
-//         echo 'Syns';
-
-//     }
-
-//     // if( $category_ID == 2){
-//     //    echo 'Cat ID is 2';
-// //     // }
-// global $wp_query;
-//     $terms_post = get_the_terms( $post->cat_ID , 'product_cat' );
-//     foreach ($terms_post as $term_cat) { 
-//     $term_cat_id = $term_cat->term_id; 
-//     echo $term_cat_id;
-// }
-
-// if ($term_cat_id == '2018'){
-//             echo '<a href="https://xn--blrdgul-fxa8m.se/">Villkor vid avbokning av kurser Policy</a>';
-
-// }
-
-
 
 ?>
