@@ -56,9 +56,12 @@ Verision: 0.1
 .breadcrumb-wrapper{
 	display: none;
 }
+
+/* Visa Titel på Blogg post*/
 .blog .entry-title{
 	display: block;
 }
+
 .page-id-269 .entry-header{
 	display: none;
 }
@@ -72,7 +75,7 @@ Verision: 0.1
 	    background-image: url(https://xn--blrdgul-fxa8m.se/wp-content/uploads/2018/12/cropped-Top-part-1-5.jpg);
 }
 
-
+/*Styling för produkt sida */
 .woocommerce-product-details__short-description{
 	text-align: left;
 }
@@ -86,8 +89,6 @@ Verision: 0.1
 .summary ,entry-summary{
 	text-align: left !important;
 }
-
-
 .price ,woocommerce-Price-amount ,amount{
 	text-align: center !important;
 	color: purple !important;
@@ -103,8 +104,8 @@ Verision: 0.1
 	margin-bottom: 30px;
 }
 .single_add_to_cart_button {
-		background-color: #0ea78a !important;
-text-align: center;
+	background-color: #0ea78a !important;
+	text-align: center;
 }
 
 .variations_form .cart{
@@ -115,22 +116,6 @@ text-align: center;
 #wc-stripe-payment-request-wrapper{
 	display: none !important;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 @media (min-width: 481px) and (max-width: 767px) {
 	/*#masthead{*/
@@ -165,12 +150,16 @@ text-align: center;
 	.top-area {
 		padding: 0px !important;
 	}
+
+	.site .site-title{
+		font-size: 5rem !important;
+	}
 	.site-branding{
 		font-size: 2px !important;
 		display: none;
 	}
 	.page-id-269 .data-bg{
-		height: 490px !important	
+		height: 500px !important	
 	
 	}
 	.page-id-269 .site-branding {
@@ -192,6 +181,25 @@ text-align: center;
 		border-top: none;
 	}
 	
+	#kursbox{
+		display: flex;
+		display: -webkit-flex; 
+	}
+
+	#kurs02{order: 1; -webkit-order: 1;}
+	#kurs24{order: 2;-webkit-order: 2;}
+	#kurs46{order: 3; -webkit-order: 3;}
+	#kurs68{order: 4; -webkit-order: 4;}
+	#kurs810{order: 5; -webkit-order: 5;}
+	#kurs1012{order: 6;-webkit-order: 6;}
+	#specialkurs{order: 7;-webkit-order: 7;}
+	#sprakkurs{order: 8; -webkit-order: 8;}
+	#sondagsoppet{order: 9; -webkit-order: 9;}
+
+
+
+
+
 
 }
   
